@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+/* navbar */
+.logo-img{
+    width: 45vh;
+}
+.navbar{
+  position: fixed;
+}
+/* #bluenav{
+    background-color: #0051d2;
+    
+    
+   
+}
+
+
+.navbar-brand{
+    color: white;
+}
+
+
+
+.color{
+    
+    color: #0051d2;
+}
+
+#white  {
+    color: rgb(255, 254, 254);
+    font-size: 19px;
+}
+#list{
+    color: white;
+    font-size: 20px;
+}
+.dropdown ul li a{
+    color: #0051d2;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+#bluenav a{
+    transition: 300ms;
+}
+#bluenav a:hover{
+ color: #0051d2;;
+}
+
+#language i{ 
+    padding-right: 5px;
+    padding-left: 20px;
+   
+}
+/* navbar contact icons */
+
+/* #nav-icons li{
+  padding-left: 10px;
+}
+
+#dropdown-border{
+  border-color: aqua;
+  border: 10px;
+} */ 
+/* //acؤeil section// */
+.accueil{
+    background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(img/background.jpg);
+   min-height:  500px;
+    background-size: cover;
+    background-position: center;
+   
+}
+#accueil-div h1{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-family:  'Montserrat';
+    font-weight: 500;
+}
+#accueil-div h6{
+    color: rgb(214, 213, 213);
+   margin-bottom: 15px;
+   font-size: 17px;
+}
+#accueil-div a{
+    text-decoration: none;
+    color: rgb(235, 232, 232);
+}
+#accueil-div button{
+    background-color: #0051d2;
+    border: #0051d2;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 20px;
+}
+/* services */
+.accueill-services{
+    background-color: #f3f5f9;
+    padding-bottom: 35px;
+}
+.accueill-services h1{
+    text-align: center;
+    padding-top: 35px;
+    font-family:"montesrrat ace";
+    color: #0051d2;
+    
+   
+}
+/* services cards */
+#cards_landscape_wrap-2{
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+  
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+   
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+    color: #0051d2;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+    color: #5482cc;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 1rem 8px;
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    
+  }
+
+  #cards_landscape_wrap-2 .card-flyer .text-box h6{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 700ms ease-in-out;
+    font-family:"montesrrat ace";
+    color: rgba#0051d2;
+  }
+  /* a propos de nous */
+    .Àpropos{
+    min-height: 500px;
+    }
+    .lign{
+     
+        border: 2px solid #142a46;;
+       
+      width: 25%;
+      margin: 10PX auto;
+    }
+   #apropos-paragraph p{
+    letter-spacing : 1px;
+    color: rgba(0, 0, 0, 0.70);
+   }
+    .porpos-nous h3{
+      padding-bottom: 20px;
+    }
+    .porpos-nous p{
+      padding-bottom: 10px;
+    }
+    #apropos-paragraph h3{
+     color:  #0051d2;
+     font-family: "Tajawal";
+     font-size: 30px;
+    text-align: left;
+    font-weight: 400;
+    }
+   
+/* convention */
+
+    #convention-img{
+        width: 80%;
+        height: 90%;
+        box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.75);
+    }
+
+    .convention-header {
+      text-align: center;
+      padding-top: 35px;
+      font-family:"montesrrat ace";
+      color: #0051d2;
+      
+     
+  }
+  .convention{
+    background-color: #f3f5f9;
+  }
+  /* convention end */
+  /* footer */
+
+  footer{
+    background-color: #05398d;
+   padding-top: 50px;
+   color: white;
+  }
+ 
+
+  #temps h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -2px;
+    font-family: "Montserrat Ace";
+    color: white;
+  }
+  #temps p ,a{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+  }
+  .lign-footer{
+    background-color:white ;
+    
+    height: 1px;
+    width: 200px;
+
+    opacity: 1;
+  }
+  .lign-footer-2{
+    background-color:white ;
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    right: 80px;
+    top: -15px;
+    opacity: 0.7;
+  }
+  #contact-footer{
+    font-weight: 100;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+  #temps-travail-footer{
+    opacity: 0.7;
+  }
+
+
+  #footer-config .col-md-3 p{
+    color: rgba(255,255,255,0.9);
+  }
+  #fotter-config p{
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    
+  }
+
+  #test {
+    
+      transition: height 0.9s ease;
+     
+    
+  }
+  @media (min-width: 768px) {
+    .accueil-div{
+      color: black;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
