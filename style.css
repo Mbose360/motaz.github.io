@@ -17,6 +17,10 @@ h1 {
 .navbar{
   position: fixed;
 }
+.nav-link{
+  font-size: larger;
+}
+
 /* #bluenav{
     background-color: #0051d2;
     
@@ -74,7 +78,7 @@ h1 {
 /* //acؤeil section// */
 .accueil{
     background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(img/background.jpg);
-   min-height:  500px;
+   min-height:  600px;
     background-size: cover;
     background-position: center;
    
@@ -92,11 +96,12 @@ h1 {
    margin-bottom: 15px;
    font-size: 17px;
 }
-#accueil-div a{
-    text-decoration: none;
-    color: rgb(235, 232, 232);
+#btn-accueil a{
+text-decoration: none; 
+color: white;
 }
-#accueil-div button{
+#btn-accueil{
+  color: #fff;
     background-color: #0051d2;
     border: #0051d2;
     padding: 10px 30px;
@@ -104,17 +109,24 @@ h1 {
     font-weight: 500;
     font-size: 17px;
     margin-top: 20px;
+    transition: ease 0.5s;
 }
+#btn-accueil:hover{
+ background-color: white;
+ color: #0051d2;
+}
+
 /* services */
 .accueill-services{
     background-color: #f3f5f9;
     padding-bottom: 35px;
+    min-height: 600px;
 }
 .accueill-services h1{
     text-align: center;
     padding-top: 35px;
     font-family:"montesrrat ace";
-    color: #0051d2;
+    color: #263671;
     
    
 }
@@ -130,10 +142,11 @@ h1 {
   }
   #cards_landscape_wrap-2 .card-flyer {
     border-radius: 5px;
+    
   
   }
   #cards_landscape_wrap-2 .card-flyer .image-box{
-    background: #ffffff;
+    
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
     border-radius: 5px;
@@ -156,13 +169,16 @@ h1 {
   }
   #cards_landscape_wrap-2 .card-flyer .text-box{
     text-align: center;
-    color: #0051d2;
+    color: #fff;
+    background-color: #263671;
   }
   #cards_landscape_wrap-2 .card-flyer .text-box p{
-    color: #5482cc;
+    color: #fff;
+    background-color: #263671;
   }
   #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
     padding: 1rem 8px;
+    background-color: #263671;
   }
   #cards_landscape_wrap-2 .card-flyer{
     background: #FFFFFF;
@@ -205,6 +221,10 @@ h1 {
       width: 25%;
       margin: 10PX auto;
     }
+    .carousel-control-prev ,.carousel-control-next{
+      color: #0051d2;
+      background-color: #142a46;
+    }
    #apropos-paragraph p{
     letter-spacing : 1px;
     color: rgba(0, 0, 0, 0.70);
@@ -237,7 +257,7 @@ h1 {
       text-align: center;
       padding-top: 35px;
       font-family:"montesrrat ace";
-      color: #0051d2;
+      color: #263671;
       
      
   }
@@ -248,7 +268,7 @@ h1 {
   /* footer */
 
   footer{
-    background-color: #05398d;
+   background-color: #263671;
    padding-top: 50px;
    color: white;
   }
@@ -261,7 +281,7 @@ h1 {
     font-family: "Montserrat Ace";
     color: white;
   }
-  #temps p ,a{
+  #temps p , #temps a ,#nav-footer ,#nav-footer p{
     color: rgba(255,255,255,0.9);
     text-decoration: none;
   }
@@ -269,7 +289,7 @@ h1 {
     background-color:white ;
     
     height: 1px;
-    width: 200px;
+    width: 180px;
 
     opacity: 1;
   }
@@ -309,13 +329,18 @@ h1 {
      
     
   }
-  @media (min-width: 768px) {
-    .accueil-div{
-      color: black;
-    }
-  }
 
-
+ 
+ #unit-drop{
+  color: #0051d2;
+ }
+ .nav-h4{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: -2px;
+  font-family: "Montserrat Ace";
+  color: white;
+ }
 
 
 
