@@ -238,8 +238,8 @@ margin-top: -70px;
 
   .contact-us{
 
-background-color: #376eaf;
-max-height: 300px;
+    background-color: #263671;
+    max-height: 350px;
 
 
   }
@@ -250,10 +250,10 @@ max-height: 300px;
     
   }
   .contact-us p a{
-    color: #2e5b92;
+    color: white;
     text-decoration: none;
     transition: 0.5s;
-    background-color: white;
+    background-color: rgba(0, 233, 19, 0.87);
     padding: 10px 20px;
     border-radius: 7px;
     margin-top: 10px;
@@ -272,34 +272,77 @@ max-height: 300px;
 
 
  /* footer */
-  footer{
-    background-color: #376eaf;
-  }
-  #fotter-config h2{
-    font-family: "Open Sans",sans-serif;
-    color: white;
-    padding: 20px;
-  }
-  #temps h4{
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: -2px;
-    font-family: "Montserrat Ace";
-    color: white;
-  }
-  #temps p ,a{
-    color: rgba(255,255,255,0.9);
-    text-decoration: none;
-  }
+ footer{
+  background-color: #263671;
+  padding-top: 50px;
+  color: white;
+ }
 
 
-  #footer-config .col-md-3 p{
-    color: rgba(255,255,255,0.9);
-  }
-  #fotter-config p{
-    font-family: "Open Sans",sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: white;
+ #temps h4{
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: -2px;
+   font-family: "Montserrat Ace";
+   color: white;
+ }
+ #temps p , #temps a ,#nav-footer ,#nav-footer p{
+   color: rgba(255,255,255,0.9);
+   text-decoration: none;
+ }
+ .lign-footer{
+   background-color:white ;
+   
+   height: 1px;
+   width: 180px;
+
+   opacity: 1;
+ }
+ .lign-footer-2{
+   background-color:white ;
+   position: absolute;
+   height: 90%;
+   width: 2px;
+   right: 80px;
+   top: -15px;
+   opacity: 0.7;
+ }
+ #contact-footer{
+   font-weight: 100;
+   font-size: 16px;
+   opacity: 0.7;
+ }
+ #temps-travail-footer{
+   opacity: 0.7;
+ }
+
+
+ #footer-config .col-md-3 p{
+   color: rgba(255,255,255,0.9);
+ }
+ #fotter-config p{
+   font-family: "Open Sans",sans-serif;
+   font-size: 1rem;
+   font-weight: 400;
+   color: white;
+   
+ }
+
+ #test {
+   
+     transition: height 0.9s ease;
     
-  }
+   
+ }
+
+
+#unit-drop{
+ color: #0051d2;
+}
+.nav-h4{
+ font-size: 18px;
+ font-weight: 600;
+ margin-bottom: -2px;
+ font-family: "Montserrat Ace";
+ color: white;
+}
