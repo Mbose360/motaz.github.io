@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+      overflow: hidden;
+    }
+
+    #overlay img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: zoom-out;
+      transition: transform 0.5s ease;
+    }
+
+    #zoomInButton, #zoomOutButton {
+      position: fixed;
+      top: 10px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 100px; /* Set your preferred image width */
+      height: 100px; /* Set your preferred image height */
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="overlay" onclick="closeOverlay()">
+  <img id="overlayImage" alt="Overlay Image" onclick="toggleZoom()">
+</div>
+
+<div class="gallery">
+  <img src="motaz.github.io-main/img/anestesie.jpg" onclick="openOverlay('motaz.github.io-main/img/anestesie.jpg')" alt="Image 1">
+  <img src="image2.jpg" onclick="openOverlay('image2.jpg')" alt="Image 2">
+  <!-- Add more images as needed -->
+</div>
+
+<div id="zoomInButton" onclick="zoomIn()">+</div>
+<div id="zoomOutButton" onclick="zoomOut()">-</div>
+
+<script>
+  var currentZoom = 1;
+
+  function openOverlay(imageSrc) {
+    var overlay = document.getElementById('overlay');
+    var overlayImage = document.getElementById('overlayImage');
+
+    overlayImage.src = imageSrc;
+    overlay.style.display = 'flex';
+    overlay.style.cursor = 'zoom-out';
+    resetZoom();
+  }
+
+  function closeOverlay() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+  }
+
+  function toggleZoom() {
+    if (currentZoom === 1) {
+      zoomIn();
+    } else {
+      zoomOut();
+    }
+  }
+
+  function zoomIn() {
+    var overlayImage = document.getElementById('overlayImage');
+    currentZoom += 0.2;
+    overlayImage.style.transform = 'scale(' + currentZoom + ')';
+  }
+
+  function zoomOut() {
+    var overlayImage = document.getElementById('overlayImage');
+    currentZoom -= 0.2;
+    overlayImage.style.transform = 'scale(' + currentZoom + ')';
+  }
+
+  function resetZoom() {
+    var overlayImage = document.getElementById('overlayImage');
+    currentZoom = 1;
+    overlayImage.style.transform = 'scale(1)';
+  }
+
+  // Zooming using the mouse wheel
+  document.getElementById('overlay').addEventListener('wheel', function (event) {
+    event.preventDefault();
+    if (event.deltaY < 0) {
+      zoomIn();
+    } else {
+      zoomOut();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
